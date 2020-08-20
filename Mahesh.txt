@@ -1,0 +1,104 @@
+linux by sai krishna
+linux git ansible
+servers 
+linux and she
+----------------
+Git--Gitlab,Gitbucket,Github
+Maven
+Jenkins Linux online available
+Docker 
+Kubernates 
+Ansible/Chef/Puppet
+
+CI--Git,Jenkins
+CD--Docker,kubernates,Ansible
+
+GYF78XL0G5WH
+
+
+1.Version control---Git
+2.continous integration---Jenkins,bamb0
+3.Build tolls---Maveen
+4.Environment setup----vagvent,kubernates
+5.Configuration toolds-ansible
+
+ 
+version control:
+1.It's accepting the code which is coming form entire team integrating the code in entire one project able to collbrate and share between them
+2. They are preserving older version and latest version of code so that any point of time the team members can jump between which ever versions they want
+3.it is keeping track of how is making what kind of changes
+   version control 2 types
+1.centrailsed version controlling
+==================================
+Here we have a remote server where version controlling is done all the team members simply upload thier codes(checkin) into this remote  servers
+2.disturbed version controlling
+=================================
+Here we have aa local repository on every team members machine where the code is commited into and in the local repository version controllng happens at the level of individual team member later this can be checkedin into a remote server where verison controlling happens at the level of the entire team
+
+Setting up username and email globally for all users on a specific machine
+==========================================================================
+git config --global user.name " "
+git config --global user.email " "
+
+To see the list of configurations on git
+git config global --list
+
+Git uses three ccomponents when working on the local machine
+1 working directory or workspace
+2 stagging area
+3 local repository
+working directory is the folder where the code or the conguration files are created.Intially the files here are called as untracked files
+Stagging area is the intermediate buffer zone of git into which files are temporarly move for indexing purpose and the files present here are called as indexed files
+local Repository is the location where version controlling happens and files present here are callled as a commited files
+
+create a folder in desktop and copy the files  
+1.to run the folder which are git related we use git init
+git init create empty hidden folder called as .git will store all the necessary configurations git to run
+2.To send a file form working dir to stagging area
+git add filename
+to add multiple files to stagging area
+git add file1 file2
+to send all the files or complete folder just git add .
+Note . represents present working directory
+3.we would send accendiatally file to stagging area should be back form stagging to untracked file use
+git rm --cached file name (or)
+git reset file name
+to get status git status
+4.To send the files form the stagging area to the local repository
+git commit -m "some message"
+5.to see the status of the filess present in stagging area and untracked areas use
+git status
+get add.
+git status
+6 to see the commit history of the local repository
+git log
+git log --oneline to see the commit history in short format
+===========================================================
+.gitignore
+===================
+This is a special congiuration file which is used for hiding private files for, git
+any file whose name is mentioned in .gitignore unaccesble by git
+
+1 create few files using touch command
+2 check the status of git
+  git status 
+  it will show all the above 5 files are untracked files
+3 to hide file1-file3 form git
+  cat > .gitignore
+  file1
+  file2
+  ile3
+to come out of cat command ctrl+d
+4 Check the status of git
+  git status 
+  file1-file3 will no longer be show as untracked files
+  git cannot access those files 
+
+
+
+
+
+
+
+
+

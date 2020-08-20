@@ -1,0 +1,7 @@
+1.what branching categories follow in your organisation?
+vmvare
+2.whhat is virtulasition
+
+Linux
+  Ubuntu
+  Centos
